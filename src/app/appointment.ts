@@ -1,6 +1,6 @@
 export class Appointment {
     id: number= 0;
-    name: string = '';
+    patientName: string = '';
     age: string = '';   
     systomps: string = '';
     number: string = '';

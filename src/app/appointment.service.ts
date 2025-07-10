@@ -13,4 +13,8 @@ export class AppointmentService {
   getAllAppointments():Observable<Appointment[]> {
     return this.httpclinet.get<Appointment[]>(this.baseUrl);
   }
+   private baseUrl1 = 'http://localhost:8080/appointment/createappointment';
+  createAppointment(appointment:Appointment):Observable<Appointment> {
+    return this.httpclinet.post<Appointment>(this.baseUrl1, appointment);
+  }
 }

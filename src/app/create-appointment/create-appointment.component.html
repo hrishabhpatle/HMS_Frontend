@@ -1,0 +1,28 @@
+ 
+<div class="container">
+  <h2>Create Appointment</h2>
+  <form (ngSubmit)="onSubmit()" >
+    <div class="mb-3">
+      <label >Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" [(ngModel)]="appointment.patientName" >
+       
+    </div>
+    
+     <div class="mb-3">
+      <label >Age</label>
+      <input type="text" class="form-control" id="age" name="age" placeholder="Enter age" [(ngModel)]="appointment.age" >
+       
+    </div>
+<div class="mb-3">
+      <label >Systomps</label>
+      <input type="text" class="form-control" id="systomps" name="systomps" placeholder="Enter Systomps" [(ngModel)]="appointment.systomps">
+       
+    </div>
+    <div class="mb-3">
+      <label>Mobile Number</label>
+      <input type="text" class="form-control" id="number" name="number" placeholder="Enter number" [(ngModel)]="appointment.number" >
+       
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>   
+</div>
