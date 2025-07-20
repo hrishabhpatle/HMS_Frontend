@@ -1,60 +1,114 @@
-# FrontedForHospitalMgmtSystem
+ 🏥 Hospital Management System – Frontend (Angular)
+This is the Angular-based frontend of the Hospital Management System project. It interacts with the backend (Spring Boot REST APIs) and provides separate features for Doctors and Admins.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+🌐 Live Preview (Optional)
+If deployed, add:
 
-## Development server
+arduino
+ 
+🔗 https://your-hospital-app.netlify.app/
+🚀 Tech Stack
+Technology	Version
+Angular	17+
+TypeScript	5+
+HTML / CSS	Tailwind / Bootstrap
+HTTP Client	Axios / HttpClient
+Backend	Spring Boot REST API
+Routing	Angular Router
 
-To start a local development server, run:
+📂 Folder Structure
+ 
+src/
+├── app/
+│   ├── components/         --> 
+│   ├── pages/
+│   │   ├── home/           --> Home screen
+│   │   ├── patient/        --> Add/Edit/Delete Patients
+│   │   ├── appointment/    --> Manage Appointments
+│   │   └── medicine/       --> Medicine List + Stock Management
+│   ├── services/           --> API Integration
+│   └── app-routing.module.ts
+👩‍⚕️ Doctor Features
+✅ Patient Management
 
-```bash
+Add new patient
+
+Update existing patient details
+
+Delete a patient
+
+✅ Medicine Management
+
+View medicine list
+
+Add new medicine
+
+Edit medicine stock
+
+Remove a medicine
+
+👨‍💼 Admin Features
+✅ Appointment Management
+
+Add new appointment
+
+View appointment list
+
+Edit appointments
+
+Delete appointments
+
+🏠 Home Page
+Basic navigation bar with links to:
+
+Home
+
+Patients
+
+Appointments
+
+Medicines
+
+Logout
+
+🔧 API Integration
+All REST API calls are made to the Spring Boot backend running at:
+http://localhost:8080/api/...
+Use Angular's HttpClient or axios (depending on your setup) in services.
+
+Example for patient service:
+getAllPatients(): Observable<Patient[]> {
+  return this.http.get<Patient[]>(`${this.apiBase}/patients`);
+}
+🛠️ How to Run
+Clone the frontend repo
+
+git clone https://github.com/your-username/hospital-management-frontend.git
+cd hospital-management-frontend
+
+Install dependencies
+npm install
+
+Run the app
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open in browser:
+http://localhost:4200/
+ 
+📦 Build for Production
+ 
+ng build --prod
+📌 To Do
+ Add role-based routing
 
-## Code scaffolding
+ Responsive UI for mobile
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+ Toast notifications for CRUD actions
 
-```bash
-ng generate component component-name
-```
+🔗 Backend Repo
+👉 Hospital Management Backend (Spring Boot)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🙋‍♂️ Author
+Hrishabh Patle
+ 
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-"# HMS_Frontend" 
