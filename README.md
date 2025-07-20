@@ -1,12 +1,8 @@
  🏥 Hospital Management System – Frontend (Angular)
 This is the Angular-based frontend of the Hospital Management System project. It interacts with the backend (Spring Boot REST APIs) and provides separate features for Doctors and Admins.
 
-🌐 Live Preview (Optional)
-If deployed, add:
-
-arduino
  
-🔗 https://your-hospital-app.netlify.app/
+  
 🚀 Tech Stack
 Technology	Version
 Angular	17+
@@ -106,7 +102,9 @@ ng build --prod
  Toast notifications for CRUD actions
 
 🔗 Backend Repo
-👉 Hospital Management Backend (Spring Boot)
+👉 Hospital Management Backend (Spring Boot) 
+https://github.com/hrishabhpatle/HMS
+
 
 🙋‍♂️ Author
 Hrishabh Patle
